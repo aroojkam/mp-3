@@ -13,14 +13,10 @@ export default function References() {
         <ReferencesContentDiv>
            <h2>References</h2>
             <ul>
-            <li><strong> J.D. </strong> Columbia Law School NY, May 2028</li>
-            <li><strong> B.A. in Computer Science</strong> Boston University MA, May 2025</li>
-            <li><strong> B.S. in Political Science</strong> Boston University MA, May 2025</li>
-            <li><strong>High School Diploma</strong> Brooks School MA, May 2021</li>
-            <li><strong>Executive Education in International Law & Policy</strong> – Harvard Kennedy School (2027)</li>
-            <li><strong>Study Abroad Scholar</strong> – Attended the University of Oxford for a summer research program in AI ethics and policy (2024)</li>
-            <li><strong>Certificate in Human Rights & Advocacy</strong> – The Hague Academy of International Law (2026)</li>
-            <li><strong>Top 1% of Graduating Class</strong> – Recognized for academic excellence and leadership at Boston University (2025)</li>
+            <li><strong> Ms. Zoila Gomez </strong> Gomez & Palumbo Boss (978-433-1298)</li>
+            <li><strong> Mr. Stevens</strong> Law Firm Colleague (978-766-3657)</li>
+            <li><strong>Asia Zaheen</strong> Mother (978-807-1935)</li>
+            <li><strong>Ayyan Kamran</strong> Brother (978-394-7758)</li>
             </ul>
         </ReferencesContentDiv>
     )
