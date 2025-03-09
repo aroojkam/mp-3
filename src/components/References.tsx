@@ -1,4 +1,3 @@
-
 import styled from "styled-components";
 
 const ReferencesContentDiv = styled.div`
@@ -10,10 +9,27 @@ const ReferencesContentDiv = styled.div`
     text-align: center;
 `;
 
+type Reference = {
+    name: string;
+    position: string;
+    contact: string; 
+};
+
+const professionalReferences: Reference[] = [
+    { name: "Ms. Gomez", position: "Gomez & Palumbo Boss", contact: "978-433-1298" },
+    { name: "Mr. Stevens", position: "Law Firm Colleague", contact: "978-766-3657" },
+];
+
+const personalReferences: Reference[] = [
+    { name: "Asia Zaheen", position: "Mother", contact: "978-807-1935" },
+    { name: "Ayyan Kamran", position: "Brother", contact: "978-394-7758" },
+];
+
 export default function References() {
     return (
         <ReferencesContentDiv>
             <h2>References</h2>
+
             <h3>Professional</h3>
             <table border="1" style={{ borderCollapse: "collapse", textAlign: "center", width: "80%" }}>
                 <thead>
@@ -24,18 +40,16 @@ export default function References() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Ms. Gomez</td>
-                        <td>Gomez & Palumbo Boss</td>
-                        <td>978-433-1298</td>
-                    </tr>
-                    <tr>
-                        <td>Mr. Stevens</td>
-                        <td>Law Firm Colleague</td>
-                        <td>978-766-3657</td>
-                    </tr>
+                    {professionalReferences.map((ref, index) => (
+                        <tr key={index}>
+                            <td>{ref.name}</td>
+                            <td>{ref.position}</td>
+                            <td>{ref.contact}</td>  
+                        </tr>
+                    ))}
                 </tbody>
             </table>
+
             <h3>Personal</h3>
             <table border="1" style={{ borderCollapse: "collapse", textAlign: "center", width: "80%" }}>
                 <thead>
@@ -46,16 +60,13 @@ export default function References() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Asia Zaheen</td>
-                        <td>Mother</td>
-                        <td>978-807-1935</td>
-                    </tr>
-                    <tr>
-                        <td>Ayyan Kamran</td>
-                        <td>Brother</td>
-                        <td>978-394-7758</td>
-                    </tr>
+                    {personalReferences.map((ref, index) => (
+                        <tr key={index}>
+                            <td>{ref.name}</td>
+                            <td>{ref.position}</td>
+                            <td>{ref.contact}</td>  
+                        </tr>
+                    ))}
                 </tbody>
             </table>
         </ReferencesContentDiv>
