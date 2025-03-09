@@ -12,7 +12,7 @@ const ReferencesContentDiv = styled.div`
 type Reference = {
     name: string;
     position: string;
-    contact: string; 
+    contact: string;  
 };
 
 const professionalReferences: Reference[] = [
